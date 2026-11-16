@@ -80,12 +80,14 @@ The environment was prepared for integration with Wazuh SIEM and subsequent secu
 
 ## Screenshots
 
-Screenshots documenting the following will be added:
+### Windows 10 Virtual Machine
+![Windows 10 Virtual Machine](../screenshots/Windows10-VM.png)
 
-1. Windows 10 virtual machine in Oracle VirtualBox.
-2. Sysmon service status.
-3. Sysmon Operational log in Windows Event Viewer.
-4. VirtualBox snapshot configuration.
+### Sysmon Service
+![Sysmon Service Running](../screenshots/sysmon-service.png)
+
+### Sysmon Events
+![Sysmon Events in Event Viewer](../screenshots/Sysmon-events.png)
 
 ## Lessons Learned
 

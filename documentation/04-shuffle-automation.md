@@ -126,14 +126,39 @@ The test demonstrated the operation of the endpoint monitoring, SIEM alerting, a
 
 ## Screenshots
 
-The following screenshots will be added:
+## Screenshots and Workflow Evidence
 
-1. Complete Shuffle SOAR workflow.
-2. Webhook configuration with sensitive information hidden.
-3. VirusTotal API v3 integration.
-4. TheHive integration.
-5. Successful workflow execution.
-6. Automated email notification.
+### 1. Shuffle SOAR Automation Workflow
+
+The screenshot below illustrates the Shuffle SOAR workflow integrating VirusTotal API v3 and TheHive.
+
+The workflow was configured to process security indicators, perform threat intelligence lookups, and support incident response activities.
+
+![Shuffle SOAR Workflow](../screenshots/shuffle-workflow.png)
+
+### 2. Automated Email Configuration
+
+Configured an email action within Shuffle to support automated security alert notifications.
+
+This configuration allows the workflow to communicate relevant security information through email.
+
+![Shuffle Email Configuration](../screenshots/email-configuration.png)
+
+### 3. TheHive Integration — Mimikatz Alert
+
+The screenshot below demonstrates the TheHive integration associated with the controlled Mimikatz detection scenario.
+
+This provides evidence of how security alert information was incorporated into the incident response workflow.
+
+![TheHive Mimikatz Alert](../screenshots/Thehive-integration.png)
+
+### 4. Automated Security Email Notification
+
+The screenshot below shows an email notification generated through the Shuffle automation workflow.
+
+This demonstrates that the configured notification mechanism successfully delivered security alert information.
+
+![Shuffle Automated Email Notification](../screenshots/shuffle-email-notification.png)
 
 ## Lessons Learned
 

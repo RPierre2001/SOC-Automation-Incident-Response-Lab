@@ -104,7 +104,11 @@ The workflow incorporated Wazuh security alerts, SHA-256 indicators, VirusTotal 
 The screenshot below demonstrates the operational status of the three services required for the TheHive incident response environment.
 
 ![TheHive, Elasticsearch, and Cassandra Service Status](../screenshots/thehive-services-status.png)
+### TheHive Web Dashboard
 
+The screenshot below demonstrates successful access to the TheHive incident response platform.
+
+![TheHive Dashboard](../screenshots/TheHive-Dashboard.png)
 ## Lessons Learned
 
 This phase strengthened my understanding of Linux server administration, cloud infrastructure deployment, application dependencies, database and search service configuration, and incident response platform integration.

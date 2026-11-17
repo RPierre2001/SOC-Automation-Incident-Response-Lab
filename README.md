@@ -51,3 +51,4 @@ An architecture diagram and screenshots will be added as the documentation is de
 
 - [Phase 1: Windows 10 VM and Sysmon Setup](documentation/01-windows-sysmon-setup.md)
 - [Phase 2: Wazuh SIEM Deployment](documentation/02-wazuh-deployment.md)
+- [Phase 3: TheHive Incident Response Deployment](documentation/03-thehive-deployment.md)

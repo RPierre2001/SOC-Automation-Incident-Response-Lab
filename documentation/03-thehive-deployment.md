@@ -99,13 +99,11 @@ The workflow incorporated Wazuh security alerts, SHA-256 indicators, VirusTotal 
 
 ## Screenshots
 
-The following screenshots will be added to demonstrate the deployment:
+### TheHive, Elasticsearch, and Cassandra Service Verification
 
-1. Apache Cassandra service status.
-2. Elasticsearch service status.
-3. TheHive service status.
-4. TheHive web dashboard.
-5. TheHive integration within Shuffle SOAR.
+The screenshot below demonstrates the operational status of the three services required for the TheHive incident response environment.
+
+![TheHive, Elasticsearch, and Cassandra Service Status](../screenshots/thehive-services-status.png)
 
 ## Lessons Learned
 

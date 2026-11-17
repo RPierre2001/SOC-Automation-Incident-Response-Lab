@@ -83,7 +83,7 @@ The alerts were used to validate endpoint monitoring and support the subsequent 
 ## Screenshots
 
 ### Wazuh Dashboard/Agent
-![Wazuh Dashboard with Agent](../screenshots/Wazuh-%20agent-%20dashboard%20.png)
+![Wazuh Dashboard with Agent](../screenshots/Wazuh-agent-dashboard.png)
 
 ### Wazuh Manager Status
 ![Wazuh Manager Running](../screenshots/Wazuh-manager-status.png)

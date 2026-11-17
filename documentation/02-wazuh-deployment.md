@@ -82,12 +82,14 @@ The alerts were used to validate endpoint monitoring and support the subsequent 
 
 ## Screenshots
 
-Screenshots will be added to demonstrate:
+### Wazuh Dashboard/Agent
+![Wazuh Dashboard with Agent](../screenshots/Wazuh-%20agent-%20dashboard%20.png)
 
-1. Wazuh manager service status.
-2. Wazuh dashboard.
-3. Windows endpoint monitoring.
-4. Security alerts associated with the controlled Mimikatz test.
+### Wazuh Manager Status
+![Wazuh Manager Running](../screenshots/Wazuh-manager-status.png)
+
+### Security Alerts
+![Wazuh Security Alerts](../screenshots/Wazuh-Mimikatz-alerts.png)
 
 ## Lessons Learned
 

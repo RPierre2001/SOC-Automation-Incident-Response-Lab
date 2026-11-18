@@ -46,7 +46,9 @@ The SOC environment follows a security monitoring and automation workflow:
 
 The workflow demonstrates how endpoint activity can be monitored, analyzed, and processed through automated security operations.
 
-An architecture diagram and screenshots will be added as the documentation is developed.
+### SOC Architecture Diagram
+
+![SOC Automation and Incident Response Architecture](soc-architecture.png)
 ## Implementation Documentation
 
 - [Phase 1: Windows 10 VM and Sysmon Setup](documentation/01-windows-sysmon-setup.md)

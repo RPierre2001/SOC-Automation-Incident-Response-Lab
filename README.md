@@ -88,3 +88,36 @@ This SOC automation lab demonstrated the integration of endpoint monitoring, sec
 This project was developed as a personal cybersecurity home lab for educational and professional development purposes.
 
 All security testing was performed within an isolated, authorized environment. The project demonstrates detection, alert processing, threat intelligence integration, and notification workflows rather than a production SOC deployment.
+## Project Highlights
+
+The following screenshots demonstrate key components of the SOC automation environment, including endpoint monitoring, security detection, and automated alert processing.
+
+### 1. Wazuh SIEM Dashboard
+
+The Wazuh dashboard provides centralized visibility into security activity collected from the Windows 10 endpoint.
+
+![Wazuh SIEM Dashboard](screenshots/Wazuh-agent-dashboard.png)
+
+### 2. Mimikatz Security Detection
+
+Wazuh generated security alerts associated with controlled Mimikatz testing inside the Windows 10 virtual machine.
+
+![Mimikatz Detection](screenshots/Wazuh-Mimikatz-alerts.png)
+
+### 3. Shuffle SOAR Automation Workflow
+
+The Shuffle workflow connects alert processing with SHA-256 hash handling, VirusTotal threat intelligence, and incident response integrations.
+
+![Shuffle SOAR Workflow](screenshots/shuffle-workflow.png)
+
+### 4. TheHive Incident Response Integration
+
+TheHive was configured as an incident management platform within the automated workflow.
+
+![TheHive Integration](screenshots/Thehive-integration.png)
+
+### 5. Automated Email Notification
+
+Shuffle successfully delivered an automated email notification associated with the security alert.
+
+![Automated Security Alert](screenshots/shuffle-email-notification.png)

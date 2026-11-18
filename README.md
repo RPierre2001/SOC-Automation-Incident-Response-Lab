@@ -53,3 +53,4 @@ An architecture diagram and screenshots will be added as the documentation is de
 - [Phase 2: Wazuh SIEM Deployment](documentation/02-wazuh-deployment.md)
 - [Phase 3: TheHive Incident Response Deployment](documentation/03-thehive-deployment.md)
 - [Phase 4: Shuffle SOAR Automation](documentation/04-shuffle-automation.md)
+- [Phase 5: Mimikatz Detection and Security Investigation](documentation/05-mimikatz-detection.md)

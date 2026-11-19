@@ -121,3 +121,43 @@ TheHive was configured as an incident management platform within the automated w
 Shuffle successfully delivered an automated email notification associated with the security alert.
 
 ![Automated Security Alert](screenshots/shuffle-email-notification.png)
+## Challenges, Troubleshooting, and Lessons Learned
+
+Throughout the development of this SOC automation lab, I encountered and resolved several technical challenges involving security tool deployment, configuration, and integration.
+
+### 1. TheHive Deployment and Service Configuration
+
+**Challenge:** Encountered configuration issues involving Elasticsearch while deploying TheHive on an Ubuntu cloud server.
+
+**Resolution:** Investigated service configuration files, identified conflicting Elasticsearch cluster initialization settings, corrected the configuration, and verified that the required services were running.
+
+**Skills Demonstrated:** Linux administration, service troubleshooting, configuration management, and log analysis.
+
+### 2. Wazuh Manager Configuration Error
+
+**Challenge:** Wazuh Manager failed to restart after modifications to the Shuffle webhook integration in `ossec.conf`.
+
+**Resolution:** Examined Wazuh error logs, identified an XML formatting issue involving the webhook configuration, corrected the affected XML tags, and validated the configuration before restarting the service.
+
+**Result:** Successfully restored Wazuh Manager to an active and running state.
+
+**Skills Demonstrated:** XML configuration troubleshooting, Linux command-line administration, service management, and log analysis.
+
+### 3. Shuffle Webhook Replacement
+
+**Challenge:** Needed to replace an existing Shuffle webhook URL without rebuilding the SOC automation workflow.
+
+**Resolution:** Created a replacement webhook, updated the Wazuh Manager integration, restarted Wazuh, and verified that Shuffle received new executions.
+
+**Result:** Confirmed successful workflow executions and disabled the original webhook.
+
+**Skills Demonstrated:** SIEM-to-SOAR integration, webhook management, automation troubleshooting, and security configuration maintenance.
+
+### Key Lessons Learned
+
+- Security monitoring depends on accurate endpoint telemetry collection and properly configured detection rules.
+- Custom SIEM rules can improve visibility into specific adversary techniques.
+- XML configuration errors can prevent critical security services from starting.
+- SIEM-to-SOAR integrations require validation of both alert forwarding and downstream automation.
+- Troubleshooting security infrastructure requires examining logs, testing configurations, and verifying service health.
+- Protecting webhook URLs and API credentials is an important part of maintaining secure automation workflows.

@@ -142,3 +142,56 @@ Potential enhancements include:
 - Expanding MITRE ATT&CK mapping based on observed telemetry.
 - Measuring workflow execution outcomes.
 - Developing more detailed incident investigation reports.
+## Custom Wazuh Detection Engineering
+
+To improve threat detection capabilities, I developed and implemented a custom Wazuh SIEM rule designed to identify Mimikatz execution on a monitored Windows 10 endpoint.
+
+### Detection Rule Configuration
+
+The custom rule was configured with the following parameters:
+
+| Parameter | Configuration |
+|---|---|
+| Rule ID | 100002 |
+| Severity Level | 15 |
+| Event Source | Sysmon Event ID 1 |
+| Detection Method | PCRE2 Pattern Matching |
+| Target Executable | mimikatz.exe |
+| MITRE ATT&CK Technique | T1003 — OS Credential Dumping |
+| MITRE ATT&CK Tactic | Credential Access |
+
+### Detection Logic
+
+The rule monitors Windows process creation telemetry collected by Sysmon.
+
+It examines the `win.eventdata.originalFileName` field and uses case-insensitive pattern matching to identify Mimikatz-related execution.
+
+When the detection criteria are met, Wazuh generates a Level 15 security alert.
+
+### Detection Validation
+
+To validate the rule, I executed Mimikatz within an isolated Windows 10 virtual machine.
+
+The test successfully generated a Wazuh alert containing:
+
+- Rule ID 100002
+- Mimikatz Usage Detected
+- Severity Level 15
+- Executable filename and command-line information
+- Process and parent-process identifiers
+- File hash information
+- MITRE ATT&CK T1003 mapping
+
+### SOAR Integration
+
+The Wazuh Manager was configured to forward alerts associated with Rule ID 100002 to Shuffle SOAR through a webhook integration.
+
+This enabled the custom detection rule to participate in the automated security alert processing and notification workflow.
+
+### Results
+
+Successfully developed, deployed, and validated a custom SIEM detection rule using Windows endpoint telemetry.
+
+The implementation demonstrates practical experience in detection engineering, security event analysis, MITRE ATT&CK mapping, and SIEM-to-SOAR integration.
+
+**Note:** Automated blocking or process termination was not validated as part of this detection test.
